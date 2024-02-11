@@ -7,9 +7,9 @@ def input_error(func):
         except KeyError:
             return "No such contact exists."
         except ValueError:
-            return "Give me name and phone please."
+            return "Enter the argument for the command."
         except IndexError:
-            return "Give me name please."
+            return "Enter the argument for the command."
 
     return inner
 
